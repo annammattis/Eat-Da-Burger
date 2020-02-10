@@ -1,4 +1,4 @@
-/* li {
+li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
@@ -11,10 +11,10 @@
   .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: rgb(29, 168, 115);
   }
   
   .form-group {
     margin-bottom: 5px;
   }
-   */
+  
