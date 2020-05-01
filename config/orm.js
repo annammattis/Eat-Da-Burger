@@ -9,7 +9,7 @@
 
 
 // Import MySQL connection.
-var connection = require("./connection.js.js");
+var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
   var arr = [];
