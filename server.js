@@ -28,7 +28,7 @@ app.get('/', function(req, res){
   res.redirect('/todo');
 });
 
-app.use(connection, orm);
+app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
