@@ -23,7 +23,7 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/burgersController.js");
 
 app.get('/', function(req, res){
-  res.redirect('/eat-da-burger-amm');
+  res.redirect('/todo');
 });
 
 app.use(routes);
