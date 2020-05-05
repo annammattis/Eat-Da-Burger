@@ -5,6 +5,13 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 
 
+app.set('port', process.env.PORT || 3001);
+
+// Express only serves static assets in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
