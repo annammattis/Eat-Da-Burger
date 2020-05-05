@@ -1,6 +1,4 @@
 var express = require("express");
-var connection = require('./config/connection');
-var orm = require('./config/orm');
 
 var PORT = process.env.PORT || 8080;
 
@@ -10,7 +8,7 @@ var app = express();
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
-app.use(favicon(_dirname+'/public/favicon.ico'));
+// app.use(favicon(_dirname+'/public/favicon.ico'));
 // Parse application body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
