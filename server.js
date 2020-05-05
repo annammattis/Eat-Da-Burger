@@ -1,4 +1,6 @@
 var express = require("express");
+var connection = require('./config/connection');
+var orm = require('./config/orm');
 
 var PORT = process.env.PORT || 8080;
 
@@ -26,7 +28,7 @@ app.get('/', function(req, res){
   res.redirect('/todo');
 });
 
-app.use(routes);
+app.use(connection, orm);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
